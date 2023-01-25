@@ -1,0 +1,14 @@
+.background-image{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:darken;
+    filter: blur(100%);
+    }
+.btn{
+    width: fit-content;
+    text-align: center;
+}
+h5{
+    color: white;
+}

@@ -1,0 +1,13 @@
+.container{
+    text-align: center;
+    place-items: middle;
+    color: white;
+
+}
+.background-image{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:darken;
+    filter: blur(100%);
+    }

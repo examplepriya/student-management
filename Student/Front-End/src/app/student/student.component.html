@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<body>
+	<div class="background-image" 
+	style="background-image: url('https://as1.ftcdn.net/v2/jpg/03/69/00/58/1000_F_369005893_UYbUUUHDiB0HT7vs7EpO0JZ4vf830R5K.jpg');">
+	<div class ="container">
+		<div class = "row">
+			<h1 style="color: white;"> Students List</h1>
+		</div>
+
+		<div class = "row">
+			<div class = "col-lg-3">
+				<a routerLink="/create-student" class = "btn btn-primary btn-sm mb-3"> Add Student</a>
+			</div>
+		</div>
+		<table class = "table table-striped table-bordered">
+			<thead class = "table-dark">
+				<tr>
+					<th> Register Number</th>
+					<th> Student First Name</th>
+					<th> Student Last Name</th>
+					<th> Student Date of Birth</th>
+					<th> Student Email </th>
+					<th> Actions </th>
+				</tr>
+			</thead>
+
+			<tbody>
+				
+				<tr *ngFor  = "let student of students ">
+					<td><h5>{{student.regNo}}</h5></td>
+					<td><h5>{{student.firstName}}</h5></td>
+					<td><h5>{{student.lastName}}</h5></td>
+					<td><h5>{{student.dob}}</h5></td>
+					<td><h5>{{student.email}}</h5></td>
+					<td>
+						<button (click)= "updateStudent(student.id)" class = "btn btn-info">Update</button>
+
+						<button (click)= "deleteStudent(student.id)" class = "btn btn-danger">Delete</button>
+
+					</td>
+				</tr>
+			</tbody>
+
+		</table>
+		</div>
+
+	</div>
+</body>
+</html>

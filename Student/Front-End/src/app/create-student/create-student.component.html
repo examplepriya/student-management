@@ -1,0 +1,37 @@
+<div style="text-align: left" class="col-md-6 offset-md-3">
+<form (ngSubmit)="addStudent()">
+	<h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Add New Student</h1>
+	<div class="form-group">
+		<label><h3>Register No</h3></label><pre></pre>
+		<input type="number" class="form-control" id ="RegisterNo"
+		[(ngModel)] ="student.regNo" name="RegisterNo">
+	</div>
+
+	<div class="form-group">
+		<label><h3>First Name</h3></label><pre></pre>
+		<input type="text" class="form-control" id ="firstName"
+		[(ngModel)] ="student.firstName" name="firstName">
+	</div>
+
+	<div class="form-group">
+		<label><h3>Last Name</h3></label><pre></pre>
+		<input type="text" class="form-control" id ="lastName"
+		[(ngModel)] ="student.lastName" name="lastName">
+	</div>
+
+	<div class="form-group">
+		<label><h3>Date of Birth</h3></label><pre></pre>
+		<input type="date" class="form-control" id ="dob"
+		[(ngModel)] ="student.dob" name="dob">
+	</div>
+
+	<div class="form-group">
+		<label><h3>Email ID</h3> </label><pre></pre>
+		<input type="text" class="form-control" id ="EmailID"
+		[(ngModel)] ="student.email" name="EmailID">
+	</div>
+
+	<button class ="btn btn-success" type="submit">submit</button>
+
+</form>
+</div>
